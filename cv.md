@@ -7,4 +7,9 @@ I started with independent study, but two months later I learned about the cours
 * Work with **GIT**
 * Coding according to the BEM methodology
 * Working with **GULP**
-*And also I study JavaScript*
+
+*__And also I study JavaScript__*
+
+I have no experience of working as a junior developer, I took the course of Ivan Petrechenko __"Web developer 2021"__, but there was too little practical part for me!
+
+*I have a __9th__ grade education, took the course "Web Developer 2021", in the future I plan to finish courses from the RS school*

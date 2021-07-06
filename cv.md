@@ -4,7 +4,7 @@
 I started with independent study, but two months later I learned about the course from the **Rs school** and decided to enroll in it. I try not to stand still, I study new material, I want to work in this area and constantly grow as a programmer
 
 **my skills include:**
-1.work with **GIT**
-2.coding according to the BEM methodology
-3.working with **gulp**
+* Work with **GIT**
+* Coding according to the BEM methodology
+* Working with **GULP**
 *And also I study JavaScript*

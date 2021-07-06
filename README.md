@@ -1,1 +1,0 @@
-https://VoitihovichP.github.io/rsschool-cv/cv

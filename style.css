@@ -1,0 +1,16 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #ded3c2;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+.myface {
+    width: 270px;
+    height: 360px;
+}

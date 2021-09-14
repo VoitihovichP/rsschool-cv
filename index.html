@@ -1,86 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML, CSS & Git Basics</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<header class="info">
-    <div class="container">
-        <div class="info__head">
-            <div class="info__img">
-                <img src="img/myface.jpg" alt="myPhoto" class="myface">
-            </div> 
-            <div class="info__text">
-                <h1 class="info__name">Pavel Vaitsekhovih</h1>
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="info__email">Pasha2003228@gmail.com</a>  
-            </div>
-        </div>    
-    </div>
-</header>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li><a href="#info-about-me" class="header__nav-link">info about me</a></li>
+                    <li><a href="#code" class="header__nav-link">code exemple</a></li>
+                    <li><a href="#project" class="header__nav-link">gallery of projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<section class="main-info">
-    <div class="container">
-        <div class="main-info__text">
-            <div class="main-info__descr-mod">
-                <div class="main-info__descr">
-                    <span>My name is Pasha, I studied to be a cook, but I realized that I want to connect my life with IT.</span> <br>I started with independent study, but two months later I learned about the course from the Rs school and decided to enroll in it. I try not to stand still, I study new material, I want to work in this area and constantly grow as a programmer
+    <main>
+        <div class="container">
+            <section class="info" id="info-about-me">
+                <img src="assets/img/myface.jpg" alt="My photo" class="info__img">
+                <div class="info__wrapper">
+                    <nav class="info__contacts">
+                        <ul>
+                            <li><a href="https://t.me/vvvthP" class="telegram" target="_blank">My Telegram</a></li>
+                            <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="email" target="_blank">
+                                My Gmail
+                            </a></li>
+                            <li><a href="https://www.instagram.com/voitihhhhhhh/" class="github" target="_blank">My Instagram</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="info__information">
+                        <h1>Some words about me</h1>
+                        <p>My name is Pasha, I studied to be a cook, but I realized that I want to connect my life with IT. I started with independent study, but two months later I learned about the course from the Rs school and decided to enroll in it. I try not to stand still, I study new material, I want to work in this area and constantly grow as a programmer. Already successfully completed the preparatory course stage0 from the RS school.</p>
+                    </div>
+
+                    <div class="info__text-wrapper">
+                        <div class="info__skills">
+                            <h2>my skills include:</h2>
+                            <ul>
+                                <li>Work with Git</li>
+                                <li>Coding according to the BEM methodology</li>
+                                <li>Working with GULP</li>
+                                <li>JavaScript</li>
+                                <li>Work with DOM</li>
+                                <li>English level - A2</li>
+                            </ul>
+                        </div>
+    
+                        <div class="info__aducation">
+                            <p>I have a 9th grade education, took the course "Web Developer 2021" and finish 'stage 0' in RS School, in the future I plan to finish courses 'stage 1' from the RS school.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="code" id="code">
+                <h2 class="code__title">Some my code from codewars</h2>
+                <div class="code__wrapper">
+                    <pre><code class="language-javascript">
+                    function deepCount(a){
+                        let count = a.length;
+                        for(let i = 0; i &lt; a.length; i++) {
+                            if(Array.isArray(a[i])) {
+                            count += deepCount(a[i]);  
+                            }
+                        } 
+                        return count;
+                    }
+                    </code></pre>
+                    <pre><code class="language-javascript">
+                    var validWord = function(d, w) {
+    
+                        let r = new RegExp('^(' + d.join('|') + ')+$');
+                        console.log(r);
+                        console.log(w);
+                        return r.test(w);
+                            
+                        
+                    };
+                    </code></pre>
+                    <pre><code class="language-javascript">
+                    function getParticipants(handshakes){
+                        let sum = 0;
+                        let i = 1;
+                        while(sum &lt; handshakes) {
+                            sum += i++;
+                        }
+                        return i;
+                    }
+
+                    </code></pre>
+                </div>
+            </section>
+
+            <section class="project" id="project">
+                <h2 class="project__title">gallery of projects</h2>
+                <div class="project__wrapper">
+                    <div class="project__card">
+                        <a href="https://voitihovichp.github.io/" target="_blank">
+                            <img src="assets/img/gallery-img.jpg" alt="Uber exemple page" class="project__img">
+                        </a>
+                        <a href="https://voitihovichp.github.io/" class="projecr__card-link" target="_blank">
+                            <h3>My project from cours 'Web Developer 2021'</h3>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__github">
+                    <a href="https://github.com/VoitihovichP" class="footer__github-link" target="_blank">
+                        <img src="assets/svg/icons8-github.svg" alt="github icon">
+                        <p class="footer__github-text">My GitHub</p>
+                    </a>
+                </div>
+                <div class="footer__rss">
+                    <a href="https://rs.school/js/" class="footer__rss-link" target="_blank">
+                        <img src="assets/svg/rs_school_js.svg" alt="RSS JS logo">
+                    </a>
                 </div>
             </div>
-            <div class="main-info__skills">
-                <h2>my skills include:</h2>
-                <ul>
-                    <li>Work with Git</li>
-                    <li>Coding according to the BEM methodology</li>
-                    <li>Working with GULP</li>
-                    <li>I study JavaScript</li>
-                    <li>English level - A2</li>
-                </ul>
-            </div>
+            <p class="footer__date">2021</p>
         </div>
-        <div class="main-info__exemple">
-            <a href="https://voitihovichp.github.io/" class="exemple-link">example of a project that I was running</a>
-        </div>
-    </div>
-</section>
-<section>fff</section>
-<section class="education">
-    <div class="container">
-        <h2>EDUCATION</h2>
-        <div class="education__main">
-            I have a 9th grade education, took the course "Web Developer 2021", in the future I plan to finish courses from the RS school
-        </div>
-        <div class="education__sub">
-            I have no experience of working as a junior developer, I took the course of Ivan Petrechenko "Web developer 2021", but there was too little practical part for me!
-        </div>
-    </div>
-</section>
-
-<footer>
-    <div class="cont-rss"> 
-        <nav class="contacts">
-            <h2>contacts:</h2>
-            <ul>
-                <li><a href="https://t.me/vvvthP" class="telegram">My Telegram</a></li>
-                <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="email">
-                    pasha2033228@gmail.com
-                </a></li>
-                <li><a href="https://github.com/VoitihovichP" class="github">VoitihovichP</a></li>
-            </ul>
-        </nav>
-        <div class="rss">
-            <div class="rss__logo">
-                <img src="img/rs_school_js.svg" alt="RSSchool" class="logo">
-            </div>
-            <div class="rss__link">
-                <a href="https://rs.school/js-stage0/">Подготовительный курс «JavaScript/Front-end. Stage 0»</a>
-            </div>
-        </div>
-    </div>
-    <div class="year">2021</div>
-</footer>
+    </footer>
 </body>
 </html>

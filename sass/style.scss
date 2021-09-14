@@ -1,0 +1,25 @@
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #423a34;
+}
+
+body {
+    margin: 0;
+}
+
+@import 'blocks/footer';
+@import 'blocks/project';
+@import 'blocks/code';
+@import 'blocks/info';
+@import 'container';
+@import 'blocks/header';

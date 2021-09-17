@@ -1,0 +1,92 @@
+.info {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    min-height: 500px;
+    padding: 30px 0;
+    background-color: #2c2826;
+    &__img {
+        width: 334px;
+        margin-left: 25px;
+    }
+    &__wrapper {
+        display: flex;
+        /* justify-content: space-around; */
+        flex-wrap: wrap;
+        margin: 0 20px;
+        height: 446px;
+        background-color: #c1c191;
+        /* justify-content: center; */
+    }
+    &__contacts {
+        width: 100%;
+        margin: 10px 0;
+        ul {
+            display: flex;
+            margin: 0 70px;
+            justify-content: space-between;
+        }
+        a {
+            font-weight: 500;
+            font-size: 25px;
+            letter-spacing: 2px;
+            color: #49493c;
+            text-decoration: none;
+            transition: 0.3s all;
+            &:hover {
+                color: #a0a084;
+                border-radius: 10px;
+                background-color: #24241d;
+            }
+        }
+    }
+    &__information {
+        width: 100%;
+        margin: 0 20px;
+        background-color: #979774;
+        h1 {
+            margin: 0;
+            font-weight: 500;
+            font-size: 30px;
+            letter-spacing: 2px;
+            color: #49493c;
+        }
+        p {
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: 2px;
+            color: #49493c;
+        }
+    }
+    &__text-wrapper {
+        display: flex;
+
+    }
+    &__skills {
+        margin-left: 20px;
+        width: 60%;
+        h2 {
+            margin: 0;
+            font-weight: 500;
+            font-size: 25px;
+            letter-spacing: 2px;
+            color: #49493c;
+        }
+        li {
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: 2px;
+            color: #49493c;
+        }
+    }
+    &__aducation {
+        margin-right: 20px;
+        width: 40%;
+        p {
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: 2px;
+            color: #49493c;
+        }
+    }
+}

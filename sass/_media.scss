@@ -1,0 +1,553 @@
+@media only screen and (max-width: 1500px) {
+    .container {
+        max-width: 1350px;
+    }
+    .header {
+        ul {
+            a {
+                font-size: 28px;
+                &:hover {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .container {
+        min-width: 905px;
+    }
+    .header {
+        min-height: 55px;
+        ul {
+            li {
+                margin: 0 48px;
+            }
+            a {
+                font-size: 24px;
+                &:hover {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+    .info {
+        padding: 15px 0;
+        min-height: 445px;
+        &__img {
+            width: 290px;
+        }
+        &__wrapper {
+            height: 387px;
+        }
+        &__contacts {
+            margin-bottom: 5px;
+            ul {
+                margin: 0 55px;
+            }
+            a {
+                font-size: 20px;
+            }
+        }
+        &__information {
+            margin: 0 15px;
+            h1 {
+                font-size: 25px;
+            }
+            p {
+                margin: 5px;
+                font-size: 15px;
+            }
+        }
+        &__skills {
+            width: 50%;
+            margin-left: 15px;
+            h2 {
+                font-size: 20px;
+            } 
+            ul {
+                margin-top: 10px;
+            }
+            li {
+                font-size: 15px;
+            }
+        }
+        &__aducation {
+            margin: 10px 15px 10px 0;
+            width: 50%;
+            p {
+                margin: 0;
+                font-size: 15px;
+            }
+        }
+    }
+    .code {
+        padding: 15px 0; 
+        min-height: 450px;
+        &__title {
+            margin-top: 30px;
+            font-size: 35px;
+        }
+        &__wrapper {
+            flex-direction: column;
+            background-color: #423a34;
+        }
+        code {
+            font-size: 15px;
+        }
+    }
+    .project {
+        padding: 30px 0;
+        &__wrapper {
+            min-height: 300px;
+        }
+        &__title {
+            margin-top: 20px;
+            font-size: 35px;
+        }
+        &__card {
+            width: 350px;
+            height: 250px;
+        }
+        &__img {
+            width: 290px;
+        }
+        h3 {
+            margin: 0;
+            font-size: 15px;
+        }
+    }
+    .footer {
+        min-height: 120px;
+        padding: 23px 0 10px 0;
+        &__github-link {
+            width: 35%;
+        }
+        &__github-text {
+            font-size: 21px;
+        }
+        &__date {
+            margin: 25px 0 10px 0;
+            font-size: 15px;
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .container {
+        min-width: 900px;
+    }
+    .header {
+        min-height: 55px;
+        ul {
+            li {
+                margin: 0 48px;
+            }
+            a {
+                font-size: 24px;
+                &:hover {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+    .info {
+        padding: 15px 0;
+        min-height: 445px;
+        &__img {
+            width: 290px;
+        }
+        &__wrapper {
+            height: 387px;
+        }
+        &__contacts {
+            margin-bottom: 5px;
+            ul {
+                margin: 0 55px;
+            }
+            a {
+                font-size: 20px;
+            }
+        }
+        &__information {
+            margin: 0 15px;
+            h1 {
+                font-size: 25px;
+            }
+            p {
+                margin: 5px;
+                font-size: 15px;
+            }
+        }
+        &__skills {
+            width: 50%;
+            margin-left: 15px;
+            h2 {
+                font-size: 20px;
+            } 
+            ul {
+                margin-top: 10px;
+            }
+            li {
+                font-size: 15px;
+            }
+        }
+        &__aducation {
+            margin: 10px 15px 10px 0;
+            width: 50%;
+            p {
+                margin: 0;
+                font-size: 15px;
+            }
+        }
+    }
+    .code {
+        padding: 15px 0; 
+        min-height: 450px;
+        &__title {
+            margin-top: 30px;
+            font-size: 35px;
+        }
+        &__wrapper {
+            flex-direction: column;
+            background-color: #423a34;
+        }
+        code {
+            font-size: 15px;
+        }
+    }
+    .project {
+        padding: 30px 0;
+        &__wrapper {
+            min-height: 300px;
+        }
+        &__title {
+            margin-top: 20px;
+            font-size: 35px;
+        }
+        &__card {
+            width: 350px;
+            height: 250px;
+        }
+        &__img {
+            width: 290px;
+        }
+        h3 {
+            margin: 0;
+            font-size: 15px;
+        }
+    }
+    .footer {
+        min-height: 120px;
+        padding: 23px 0 10px 0;
+        &__github-link {
+            width: 40%;
+        }
+        &__github-text {
+            font-size: 18px;
+        }
+        &__date {
+            margin: 25px 0 10px 0;
+            font-size: 15px;
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    .container {
+        min-width: 600px;
+    }
+    .header {
+        height: 45px;
+        ul {
+            li {
+                margin: 0 37px;
+                a {
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+    .info {
+        min-height: 345px;
+        &__img {
+            width: 230px;
+        }
+        &__wrapper {
+            height: 330px;
+        }
+        &__contacts {
+            margin: 5px 5px;
+            a {
+                font-size: 16px;
+            }
+            ul {
+                margin: 0 14px;
+            }
+        }
+        &__information {
+            h1 {
+                font-size: 20px;
+                margin-left: 5px;
+            }
+            p {
+                margin: 3px;
+                font-size: 13px;
+            }
+        }
+        &__skills {
+            h2 {
+                font-size: 15px;
+            }
+            ul {
+                margin-top: 5px;
+            }
+            li {
+                font-size: 12px;
+            }
+        }
+        &__aducation {
+            margin-top: 3px;
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+    .code {
+        &__title {
+            margin-top: 10px;
+            font-size: 28px;
+        }
+        pre {
+            margin: 0;
+        }
+        code {
+            font-size: 13px;
+        }
+    }
+    .project {
+        padding: 15px 0;
+        min-height: 335px;
+        &__title {
+            margin-top: 10px;
+            font-size: 28px;
+        }
+        &__wrapper {
+            min-height: 215px;
+        }
+        &__card {
+            width: 280px;
+            height: 180px;
+            h3 {
+                font-size: 13px;
+            }
+        }
+        &__img {
+            width: 225px;
+        }
+    }
+    .footer {
+        padding: 15px 0 10px 0;
+        min-height: 100px;
+        &__github-link {
+            width: 50%;
+        }
+        &__github-text {
+            font-size: 15px;
+            margin-top: 30px;
+        }
+        &__rs-link {
+            img {
+                width: 160px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        min-width: 425px;
+    }
+    .header {
+        justify-content: flex-start;
+        &__hamburger {
+            width: 25px;
+            height: 25px;
+            position: relative;
+            span {
+                width: 25px;
+                height: 2px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate( -50%, -50%);
+                background-color: #030303;
+                transition: 0.3s all;
+                &:first-child {
+                    top: calc(50% - 5px);
+                }
+                &:last-child {
+                    top: calc(50% + 5px);
+                }
+            }
+        }
+        &__hamburger_active {
+            width: 25px;
+            height: 25px;
+            position: relative;
+            span {
+                width: 25px;
+                height: 2px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate( -50%, -50%);
+                background-color: #030303;
+                transition: 0.3s all;
+                &:first-child {
+                    opacity: 0;
+                }
+                &:nth-child(2) {
+                    top: 50%;
+                    transform: translate( -50%, -50%) rotate(40deg);
+                }
+                &:last-child {
+                    top: 50%;
+                    transform: translate( -50%, -50%) rotate(-40deg);
+                }
+            }
+        }
+        &__menu {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 50%;
+            height: 100vh;
+            background-color:rgba($color: #352e2e, $alpha: 0.5);
+            transform: translateX(200%);
+            transition: 0.5s all;
+        }
+        &__menu_active {
+            transform: translateX(100%);
+        }
+        ul {
+            flex-direction: column;
+            li {
+                margin-top: 20px;
+            }
+        }
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        &__img {
+            width: 170px;
+            margin: 0 0 10px 0;
+            box-shadow: 9px 5px 10px 3px #131110;
+        }
+    }
+    .project {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+@media only screen and (max-width: 576px) {
+    .container {
+        min-width: 300px;
+    }
+    .header {
+        ul {
+            li {
+                margin: 20px 20px 0 20px;
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .info {
+        &__wrapper {
+            min-height: 400px;
+        }
+        &__contacts {
+            a {
+                font-size: 9px;
+                letter-spacing: 1px;
+                &:hover {
+                    color: #49493c;
+                    background: none;
+                }
+            }
+        }
+        &__information {
+            h1 {
+                font-size: 15px;
+            }
+            p {
+                font-size: 10px;
+            }
+        }
+        &__text-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__skills {
+            width: 100%;
+            margin-left: 3px;
+            h2 {
+                font-size: 12px;
+            }
+            li {
+                font-size: 9px;
+            }
+        }
+        &__aducation {
+            width: 100%;
+            margin-left: 20px;
+            p {
+                font-size: 9px;
+            }
+        }
+    }
+    .code {
+        &__title {
+            margin-top: 5px;
+            font-size: 19px;
+        }
+        code {
+            font-size: 10px;
+        }
+    }
+    .project {
+        &__title {
+            margin-top: 5px;
+            font-size: 19px;
+        }
+        &__card {
+            width: 220px;
+            height: 160px;
+            h3 {
+                font-size: 11px;
+            }
+        }
+        &__img {
+            width: 180px;
+        }
+
+    }
+    .footer {
+        padding: 0 0 4px 0;
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__github-link {
+            margin-bottom: 15px;
+            img {
+                width: 65px;
+            }
+        }
+    }
+}

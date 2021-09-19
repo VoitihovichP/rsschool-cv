@@ -1,0 +1,54 @@
+.footer {
+    padding: 45px 0 20px 0;
+    min-height: 150px;
+    background-color: #3b3b3b;
+    &__wrapper {
+        display: flex;
+        border: none;
+    }
+    &__github {
+        width: 50%;
+        &-link {
+            display: flex;
+            justify-content: space-between;
+            width: 31%;
+            text-decoration: none;
+            img {
+                width: 76px;
+            }
+        }
+        &-text {
+            font-weight: 300;
+            font-size: 25px;
+            letter-spacing: 3px;
+            color: #fafac8;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.5s all;
+            &:hover {
+                color: #b1b18b;
+            }
+        }
+    }
+    &__rss {
+        width: 50%;
+        &-link {
+            display: flex;
+            justify-content: flex-end;
+            text-decoration: none;
+            img {
+                width: 200px;
+            }
+        }
+    }
+    &__date {
+        margin-top: 45px;
+        font-weight: 300;
+        font-size: 25px;
+        letter-spacing: 3px;
+        color: #080808;
+        cursor: pointer;
+        transition: 0.5s all;
+        text-align: center;
+    }
+}

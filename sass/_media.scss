@@ -257,7 +257,7 @@
         min-width: 600px;
     }
     .header {
-        min-height: 45px;
+        height: 45px;
         ul {
             li {
                 margin: 0 37px;
@@ -365,11 +365,75 @@
 }
 @media only screen and (max-width: 768px) {
     .container {
-        min-width: 300px;
+        min-width: 425px;
     }
     .header {
-        &__nav {
-            display: none;
+        justify-content: flex-start;
+        &__hamburger {
+            width: 25px;
+            height: 25px;
+            position: relative;
+            span {
+                width: 25px;
+                height: 2px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate( -50%, -50%);
+                background-color: #030303;
+                transition: 0.3s all;
+                &:first-child {
+                    top: calc(50% - 5px);
+                }
+                &:last-child {
+                    top: calc(50% + 5px);
+                }
+            }
+        }
+        &__hamburger_active {
+            width: 25px;
+            height: 25px;
+            position: relative;
+            span {
+                width: 25px;
+                height: 2px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate( -50%, -50%);
+                background-color: #030303;
+                transition: 0.3s all;
+                &:first-child {
+                    opacity: 0;
+                }
+                &:nth-child(2) {
+                    top: 50%;
+                    transform: translate( -50%, -50%) rotate(40deg);
+                }
+                &:last-child {
+                    top: 50%;
+                    transform: translate( -50%, -50%) rotate(-40deg);
+                }
+            }
+        }
+        &__menu {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 50%;
+            height: 100vh;
+            background-color:rgba($color: #352e2e, $alpha: 0.5);
+            transform: translateX(200%);
+            transition: 0.5s all;
+        }
+        &__menu_active {
+            transform: translateX(100%);
+        }
+        ul {
+            flex-direction: column;
+            li {
+                margin-top: 20px;
+            }
         }
     }
     .info {
@@ -390,9 +454,22 @@
     }
 }
 @media only screen and (max-width: 576px) {
+    .container {
+        min-width: 300px;
+    }
+    .header {
+        ul {
+            li {
+                margin: 20px 20px 0 20px;
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
     .info {
         &__wrapper {
-            min-height: 380px;
+            min-height: 400px;
         }
         &__contacts {
             a {
@@ -428,7 +505,7 @@
         }
         &__aducation {
             width: 100%;
-            margin-left: 27px;
+            margin-left: 20px;
             p {
                 font-size: 9px;
             }
